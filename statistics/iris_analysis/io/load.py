@@ -28,5 +28,3 @@ def load_data(dataset_path:str) -> dict:
             result["petal_length"].append(float(row[2]))
             result["petal_width"].append(float(row[3]))
         return result
-
-print(load_data(r"C:\NYPD_github\NYPD\statistics\iris.csv"))
