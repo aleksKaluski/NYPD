@@ -6,8 +6,19 @@ def save_to_csv(stat_dict: dict, output_path: str):
     dataset_path = Path(output_path)
     assert dataset_path.exists()
 
+    rows = []
+    for prop, stat in stat_dict.items():
+        row = {
+            prop: stat,
+            'mean': stat['mean'],
+            'median': stat['median'],
+            'sd': stat['sd'],
+        }
+        rows.append(row)
+
+
     with open(dataset_path, 'w', newline='') as csvfile:
-        fieldnames = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+        fieldnames = ["feature", "mean", "median", "sd"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerow(stat_dict)
+        writer.writerow(rows)
