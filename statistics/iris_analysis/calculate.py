@@ -19,11 +19,20 @@ def stats_for_all(dictionary: dict) -> dict:
               "petal_width": []}
 
     for key, value in dictionary.items():
-        result[key].append(count_mean(value))
-        result[key].append(count_median(value))
-        result[key].append(count_sd(value))
+        print(value)
+        result[key] = {
+            "mean": count_mean(value),
+            "median": count_median(value),
+            "sd": count_sd(value)}
     print(result)
     return result
 
+stat_data = {
+    "sepal_length": [5.1, 3.3],
+    "sepal_width": [3.5, 5.5],
+    "petal_length": [1.4, 2.3],
+    "petal_width": [0.2, 0.9]
+}
 
+stats_for_all(stat_data)
 
