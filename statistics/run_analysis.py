@@ -10,5 +10,5 @@ iris = 'iris.csv'
 output = 'result.csv'
 data = load.load_data(dataset_path=iris)
 result = cal.stats_for_all(data)
-save.save_to_csv(stat_dict=result, output_path=output)
+save.save_to_csv(stats=result, output_path=output)
 

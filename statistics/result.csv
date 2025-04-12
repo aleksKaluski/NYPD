@@ -1,1 +1,5 @@
 feature,mean,median,sd
+sepal_length,5.843,5.8,0.828
+sepal_width,3.057,3.0,0.436
+petal_length,3.758,4.35,1.765
+petal_width,1.199,1.3,0.762
