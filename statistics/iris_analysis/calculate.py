@@ -21,4 +21,5 @@ def stats_for_all(dictionary: dict) -> list:
             "mean": count_mean(value),
             "median": count_median(value),
             "sd": count_sd(value)})
+    print("Calculations are correct!")
     return result

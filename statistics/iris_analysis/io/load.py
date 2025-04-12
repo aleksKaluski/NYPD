@@ -9,6 +9,7 @@ import numpy as np
 from pathlib import Path
 
 def load_data(dataset_path:str) -> dict:
+    print('Program has started!')
     dataset_path = Path(dataset_path)
     assert dataset_path.exists()
     assert dataset_path.is_file()

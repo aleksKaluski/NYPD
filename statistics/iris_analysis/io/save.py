@@ -12,3 +12,4 @@ def save_to_csv(stats: list, output_path: str):
         writer.writeheader()
         for s in stats:
             writer.writerow(s)
+        print("Files where saved")
