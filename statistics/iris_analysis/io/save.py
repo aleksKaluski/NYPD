@@ -15,10 +15,11 @@ def save_to_csv(stat_dict: dict, output_path: str):
             'sd': stat['sd'],
         }
         rows.append(row)
+        print(rows)
 
 
     with open(dataset_path, 'w', newline='') as csvfile:
         fieldnames = ["feature", "mean", "median", "sd"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerow(rows)
+        writer.writerow(rows[1])
