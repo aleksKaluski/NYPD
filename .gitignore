@@ -1,0 +1,78 @@
+# Created by https://www.toptal.com/developers/gitignore/api/pycharm, plus Python-specific rules
+
+### PyCharm and JetBrains IDEs ###
+.idea/
+.idea/**
+
+# Ignore PyCharm-specific files
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+cmake-build-*/
+
+# AWS User-specific files
+.idea/**/aws.xml
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+
+# Sonarlint and SonarQube
+.idea/**/sonarlint/
+.idea/**/sonarIssues.xml
+
+# Rest client
+.idea/httpRequests
+
+# CodeStream plugin
+.idea/codestream.xml
+
+# Azure Toolkit for IntelliJ plugin
+.idea/**/azureSettings.xml
+
+# IntelliJ cache files
+.idea/$CACHE_FILE$
+
+### Python-specific ignores ###
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data files
+files/*.json
+
+# Log files
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Misc temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Environment variables files
+.env
+*.env
